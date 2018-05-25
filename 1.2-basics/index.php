@@ -21,5 +21,4 @@
                 }
         }   
     } while ($numOne > $numTwo);
-
 ?>
