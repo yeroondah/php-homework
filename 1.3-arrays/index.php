@@ -27,18 +27,18 @@ $firstNames = [];
 $secondNames = [];
 $fantasyAnimals = [];
 $finalAnimalsList = [];
-$index = 0;
+$name = [];
 
 foreach ($animals as $continent => $animalsList) {
     foreach ($animalsList as $animal) {
         if (str_word_count($animal) == 2) {
-            $namesFromTwoWords[$continent][] = explode(' ', $animal);
-            $firstNames[] = $namesFromTwoWords[$continent][$index][0];
-            $secondNames[] = $namesFromTwoWords[$continent][$index][1];
-            $index++;
+            $name[] = explode(' ', $animal);
+            $namesFromTwoWords[$continent][] = $name[0];
+            $firstNames[] = $name[0][0];
+            $secondNames[] = $name[0][1];
+            $name = [];
        }   
     }
-    $index = 0;
 }
 shuffle($firstNames);
 shuffle($secondNames);
