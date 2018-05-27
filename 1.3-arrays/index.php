@@ -32,11 +32,10 @@ $name = [];
 foreach ($animals as $continent => $animalsList) {
     foreach ($animalsList as $animal) {
         if (str_word_count($animal) == 2) {
-            $name[] = explode(' ', $animal);
+            $name[0] = explode(' ', $animal);
             $namesFromTwoWords[$continent][] = $name[0];
             $firstNames[] = $name[0][0];
             $secondNames[] = $name[0][1];
-            $name = [];
        }   
     }
 }
