@@ -1,0 +1,17 @@
+.main-width {
+    background-color: rgb(0, 145, 182);
+    color: white;
+    font-size: 20px;
+}
+
+.table {
+    font-family: "Calibri", sans-serif;
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid black;
+}

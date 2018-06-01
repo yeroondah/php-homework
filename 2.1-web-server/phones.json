@@ -1,0 +1,46 @@
+[
+    {
+        "first_name" : "Виктор", 
+        "last_name" : "Бобров",
+        "adress" : {
+            "country" : "Россия",
+            "region" : "Калужская",
+            "city" : "Рославль",
+            "street_name" : "Брущаткина, 45"
+        },
+        "phone_numbers" : {
+            "home_number" : "+7 (48439) 523 56",
+            "mobile_phone" : "+7 (953) 321 69 51"
+        }
+    },
+
+    {
+        "first_name" : "Игорь", 
+        "last_name" : "Латышев",
+        "adress" : {
+            "country" : "Белоруссия",
+            "region" : "Гомельская",
+            "city" : "Гомель",
+            "street_name" : "Сафронова, 29"
+        },
+        "phone_numbers" : {
+            "home_number" : "+7 (375) 222 1313",
+            "mobile_phone" : "+7 (920) 888 2286"
+        }
+    },
+
+    {
+        "first_name" : "Юля", 
+        "last_name" : "Филипас",
+        "adress" : {
+            "country" : "Доминикана",
+            "region" : "Сан-Хуанская",
+            "city" : "Пунта-Кана",
+            "street_name" : "Де ла Ведрэ, 4"
+        },
+        "phone_numbers" : {
+            "home_number" : "+7 (495) 333 69 96",
+            "mobile_phone" : "+7 (960) 635 5995"
+        }
+    }
+]
