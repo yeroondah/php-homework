@@ -2,9 +2,9 @@
 
 function getContent()
 {
-    $data_json = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=Obninsk&appid=059d32e4933efe1aad5128e726d200c3");
-    file_put_contents('data.json', $data_json);
-    return json_decode($data_json, true);
+    $dataJson = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=Obninsk&appid=059d32e4933efe1aad5128e726d200c3");
+    file_put_contents('data.json', $dataJson);
+    return json_decode($dataJson, true);
 }
 
 function cloudCount($cloud)
@@ -23,14 +23,14 @@ function cloudCount($cloud)
 }
 
 if (file_exists('data.json') && time() - filemtime('data.json') < 3600) {
-    $data_array = json_decode(file_get_contents('data.json'), true);
+    $dataArray = json_decode(file_get_contents('data.json'), true);
 } else {
-    $data_array = getContent();
+    $dataArray = getContent();
 }
 
-$cloud = cloudCount($data_array['clouds']['all']);
-$humidity = $data_array['main']['humidity'] . '%';
-$celcium = round($data_array['main']['temp'] - 273.15) . ' &degC';
+$cloud = cloudCount($dataArray['clouds']['all']);
+$humidity = $dataArray['main']['humidity'] . '%';
+$celcium = round($dataArray['main']['temp'] - 273.15) . ' &degC';
 ?>
 
 <table>
