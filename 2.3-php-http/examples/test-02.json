@@ -1,0 +1,23 @@
+[
+    {
+        "question": "Столица Израиля?",
+        "anwsers": [
+            {
+                "anwser": "Багдад",
+                "result": false
+            },
+            {
+                "anwser": "Кабул",
+                "result": false
+            },
+            {
+                "anwser": "Иерусалим",
+                "result": true
+            },
+            {
+                "anwser": "Стамбул",
+                "result": false
+            }
+        ]
+    }
+]

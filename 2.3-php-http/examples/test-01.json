@@ -1,0 +1,23 @@
+[
+    {
+        "question": "Кто из этих людей музыкант?",
+        "anwsers": [
+            {
+                "anwser": "Боб Дилан",
+                "result": true
+            },
+            {
+                "anwser": "Владимир Путин",
+                "result": false
+            },
+            {
+                "anwser": "Че Гевара",
+                "result": false
+            },
+            {
+                "anwser": "Мона Лиза",
+                "result": false
+            }
+        ]
+    }
+]
