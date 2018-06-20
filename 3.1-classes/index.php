@@ -1,6 +1,7 @@
 <?php
 require_once('classes/friend.php');
 require_once('classes/discount.php');
+require_once('classes/file.php');
 require_once('classes/rent.php');
 require_once('classes/buy.php');
 require_once('functions.php');
@@ -17,6 +18,12 @@ $checkPriceTwo = new discount\FixedDiscount();
 
 echo $checkPriceOne -> calcDiscount(4000) . '<br>';
 echo $checkPriceTwo -> calcDiscount(15570) . '<br>';
+echo '<hr>';
+
+$file = new file\TextFile('letter');
+echo $file -> showFile() . '<br>';
+$file -> setFormat('pdf');
+echo $file -> showFile() . '<br>';
 echo '<hr>';
 
 $flatInMoscow = new rent\FlatToRent('Москва', 3, 3500);
